@@ -1,4 +1,5 @@
 public class PointCard extends Card {
+//Looks to genarate a value for the card, between 2 values.
 
     public PointCard() {
 
@@ -11,6 +12,8 @@ public class PointCard extends Card {
         super(pointValue);
     }
 
+
+    //This is being overriding something.
     @Override
     public void play(Player currentPlayer) {
 

@@ -13,6 +13,8 @@ public class Player {
         isFrozen = false;
     }
 
+    //Why is this being used and not the take turn?
+    //Go over this later.
     public void playRandomCardFromHand() {
 
     }
@@ -27,9 +29,13 @@ public class Player {
             return;
         }
 
-        // play a random card
+        // gets a random card number in players hand
         int randomCardIndex = Rand.randomInt(0, hand.size());
+
+        // Figure out what card to play.
         Card chosenCard = hand.get(randomCardIndex);
+
+        // Play the card.
         chosenCard.play(this);
 
         // discard the card that was just played
